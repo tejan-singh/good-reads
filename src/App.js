@@ -50,9 +50,12 @@ function App() {
   const [bookList, setBookList] = useState(books)
 
   // to pull out unique categories and avoid repetation
-  const categories = [ ...new Set(books.map((book)=>{return book.category})) ] // to convert to an array
+  const categories = ['all', ...new Set(books.map((book)=>{return book.category})) ] // to convert to an array
 
   const handleClick = (category) => {
+    if (category === 'all') {
+      return setBookList(books)
+    }
     const result = books.filter((book)=>{return book.category === category})
     setBookList(result)
   }
