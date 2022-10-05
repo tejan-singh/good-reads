@@ -45,6 +45,27 @@ function App() {
       rating: "5/5",
       category: "business" 
     },
+    
+        {
+      id: 7,
+      title: 'Javascript 101',
+      rating: "5/5",
+      category: "javascript" 
+    },
+    
+        {
+      id: 8,
+      title: 'Lone wolf',
+      rating: "5/5",
+      category: "fiction" 
+    },
+    
+        {
+      id: 9,
+      title: 'Business adventures',
+      rating: "5/5",
+      category: "business" 
+    },
   ]
 
   const [bookList, setBookList] = useState(books)
